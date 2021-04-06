@@ -24,7 +24,7 @@ mongoose
 	})
 	.then(() => {
 		console.log('MOngoDB Conected');
-		return server.listen({ PORT });
+		return server.listen({ port: PORT });
 	})
 	.then((res) => {
 		console.log(`server running at ${res.url}`);
